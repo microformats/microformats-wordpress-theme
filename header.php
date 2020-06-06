@@ -13,14 +13,7 @@
 			<?php wp_title( '|' ); ?></title>
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/print.css" />
-	<!--[if lte IE 6]>
-	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/ie.css" />        
-	<![endif]-->
-	<!--[if lte IE 5.5]>
-	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/ie5.css" />        
-	<![endif]-->
 	<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>" />
 </head>
 <body>
 
