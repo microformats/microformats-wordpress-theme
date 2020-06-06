@@ -41,7 +41,7 @@ function microformatsorg_widget_init() {
 		register_sidebar(
 			array(
 				'name'          => 'Global Sidebar',
-				'id'            => 'global-sidebar',
+				'id'            => 'sidebar-1',
 				'description'   => 'Sidebar appears on all pages',
 				'before_widget' => '<div id="%1$s" class="box widget %2$s"><div class="box-inner">',
 				'after_widget'  => '</div></div>',
@@ -53,7 +53,7 @@ function microformatsorg_widget_init() {
 	register_sidebar(
 		array(
 			'name'          => 'Home Page',
-			'id'            => 'home-page',
+			'id'            => 'sidebar-2',
 			'description'   => 'Sidebar only appears on home page',
 			'before_widget' => '<div id="%1$s" class="box widget %2$s"><div class="box-inner">',
 			'after_widget'  => '</div></div>',
@@ -64,7 +64,7 @@ function microformatsorg_widget_init() {
 	register_sidebar(
 		array(
 			'name'          => 'Post Page',
-			'id'            => 'post-page',
+			'id'            => 'sidebar-3',
 			'description'   => 'Sidebar only appears on post pages',
 			'before_widget' => '<div id="%1$s" class="box widget %2$s"><div class="box-inner">',
 			'after_widget'  => '</div></div>',
