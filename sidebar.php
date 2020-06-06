@@ -15,7 +15,7 @@
 	  
 	<div class="box">
 		<div class="box-inner">
-			<?php require TEMPLATEPATH . '/searchform.php'; ?>
+			<?php get_search_form(); ?>
 		</div>
 	</div>
 
