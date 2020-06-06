@@ -21,7 +21,7 @@
 
 	<div class="box">
 		<div class="box-inner">
-			<?php /*<script type="text/javascript" src="http://embed.technorati.com/embed/4pbr3k9w4x.js"></script>*/ ?>
+			<?php /* technorati code removed */ ?>
 		</div>
 	</div>
 

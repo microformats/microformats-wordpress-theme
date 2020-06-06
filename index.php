@@ -36,11 +36,7 @@
 					</li>
 					<li><?php comments_popup_link( 'Add Comment', '1 Comment', '% Comments' ); ?></li>
 					<li>
-						<?php
-						/*
-						<script src="[?php bloginfo('stylesheet_directory'); ?]/scripts/technorati-reactions.js" type="text/javascript"></script>
-						<a class="tr-linkcount" href="http://technorati.com/search/<?php the_permalink(); ?>">View blog reactions</a> */
-						?>
+					 	<?php // Technorati reactions removed ?>
 					</li>
 				</ul>
 			</div>
