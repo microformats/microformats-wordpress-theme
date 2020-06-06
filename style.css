@@ -1,4 +1,4 @@
-/*  
+/*
 Theme Name: microformats
 Theme URI: http://microformats.org/
 Description: The official theme for microformats.org. Now maintained by Ben Ward
@@ -25,15 +25,15 @@ body {
 
 /* --[ links ]------------------------------- */
 
-a:link { 
-  	color: #3080CB;
-  	text-decoration: none;
-  	border-bottom: 1px dotted #68C3EE;
-  	}
+a:link {
+	color: #3080CB;
+	text-decoration: none;
+	border-bottom: 1px dotted #68C3EE;
+	}
 a:visited {
 	color: #5FB5E1;
 	text-decoration: none;
-  	border-bottom: 1px dotted #86D9F1;
+	border-bottom: 1px dotted #86D9F1;
 	}
 a:hover {
 	color: #fff;
@@ -41,7 +41,7 @@ a:hover {
 	text-decoration: none;
 	border: none;
 	}
-a:active { 
+a:active {
 	background-color: #6CA300;
 	}
 a.more {
@@ -171,7 +171,7 @@ address {
 	color: #6CA300;
 	border: none;
 	}
-	
+
 /* hover state */
 
 #nav li:hover {
@@ -183,7 +183,7 @@ address {
 html>body #nav a:hover {
 	background: transparent url(img/nhov-bottom.gif) no-repeat bottom right;
 	}
-	
+
 /* active state */
 
 #nav li.active {
@@ -195,7 +195,7 @@ html>body #nav a:hover {
 	}
 
 /* --[ content styles ]------------------------------- */
-	
+
 #content h2 {
 	margin: 0 0 1em 0;
 	padding: 0;
@@ -543,24 +543,24 @@ h3#archive-link {
 
 /* --[ misc ]------------------------------- */
 
-a img { 
+a img {
 	border: none;
 	}
 .hide {
 	display: none;
 	}
-img#mf-diagram { 
+img#mf-diagram {
 	border: none;
 	}
 
-blockquote blockquote, blockquote blockquote p { 
-   display:inline; 
-   margin-top:0; 
-   margin-bottom:0; 
+blockquote blockquote, blockquote blockquote p {
+   display:inline;
+   margin-top:0;
+   margin-bottom:0;
    padding:0;
 }
-blockquote ol { 
-   margin:0; 
-   padding:0; 
+blockquote ol {
+   margin:0;
+   padding:0;
    list-style:none;
 }

@@ -17,7 +17,7 @@ h1, h2, h3 {
 	}
 a:link, a:visited {
 	color: gray;
-	}	
+	}
 
 /* print URLs after link text */
 #content .entry p a:link:after, #content .entry p a:visited:after {
