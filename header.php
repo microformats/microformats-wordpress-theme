@@ -20,11 +20,7 @@
 <div id="wrap">
 	<div id="header">
 		<h1>
-		<?php
-		if ( is_home() ) {
-			{ { { { { { { { { { { { { { { { { { { { { { { { { {;
-			}}}}}}}}}}}}}}}}}}}}}}}}} };
-			?>
+		<?php if ( is_home() ) { ?>
 			<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo.gif" width="144" height="36" alt="microformats" />
 		<?php } else { ?>
 			<a href="/">
