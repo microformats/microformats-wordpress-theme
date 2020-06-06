@@ -26,6 +26,7 @@
 				array(
 					'theme_location' => 'primary',
 					'menu_class'     => 'primary-menu',
+					'container'      => '' // Do not wrap in <div>
 				)
 			);
 			?>

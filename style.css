@@ -186,10 +186,10 @@ html>body #nav a:hover {
 
 /* active state */
 
-#nav li.active {
+#nav li.current-menu-item {
 	background: url(img/nav-top.gif) no-repeat top left;
 	}
-#nav li.active a {
+#nav li.current-menu-item a {
 	color: #333;
 	background: url(img/nav-bottom.gif) no-repeat bottom right !important;
 	}
