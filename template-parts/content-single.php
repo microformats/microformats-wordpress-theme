@@ -1,4 +1,4 @@
-<div class="entry single hentry">
+<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'entry', 'single' ) ); ?>>
 	<h2 class="entry-title" id="post-<?php the_ID(); ?>"><?php the_title(); ?></h2>
 	<div class="entry-content">
 		<?php the_content( '<p class="serif">Read the rest of this entry &raquo;</p>' ); ?>

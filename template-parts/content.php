@@ -1,4 +1,4 @@
-<div class="entry hentry">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry' ); ?>>
 	<h3 class="entry-title" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -29,4 +29,4 @@
 		 	<?php // Technorati reactions removed ?>
 		</li>
 	</ul>
-</div>
+</article>
