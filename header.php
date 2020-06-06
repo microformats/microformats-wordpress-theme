@@ -3,8 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<link rel="stylesheet" type="text/css" media="screen, projection" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/print.css" />
 	<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 	<?php wp_head(); ?>
 </head>

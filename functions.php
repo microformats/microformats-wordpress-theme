@@ -11,7 +11,6 @@ function microformatsorg_theme_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
@@ -75,4 +74,24 @@ function microformatsorg_widget_init() {
 	);
 }
 add_action( 'widgets_init', 'microformatsorg_widget_init' );
+
+function microformatsorg_scripts() {
+	// Theme stylesheets
+	wp_enqueue_style(
+		'microformatsorg-style',
+		get_template_directory_uri() . '/style.css"',
+		array(),
+		'1.0',
+		'screen'
+	);
+	wp_enqueue_style(
+		'microformatsorg-print-style',
+		get_template_directory_uri() . 'css/print.css"',
+		array(),
+		'1.0',
+		'print'
+	);
+}
+
+add_action( 'wp_enqueue_scripts', 'microformatsorg_scripts' );
 
