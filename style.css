@@ -194,6 +194,10 @@ html>body #nav a:hover {
 	background: url(img/nav-bottom.gif) no-repeat bottom right !important;
 	}
 
+.menu-primary {
+	margin: 0;
+}
+
 /* --[ content styles ]------------------------------- */
 
 #content h2 {
