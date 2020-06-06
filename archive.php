@@ -13,15 +13,7 @@
 			while ( have_posts() ) :
 				the_post();
 				?>
-		<div class="entry">
-			<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
-				<?php the_content(); ?>
-			<ul class="post-info">
-				<li><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_time( 'F jS, Y' ); ?></a></li>
-				<li><address class="vcard"><a class="url fn" href="<?php the_author_meta( 'url' ); ?>"><?php the_author(); ?></a></address></li>
-				<li><?php comments_popup_link( 'Add Comment', '1 Comment', '% Comments' ); ?></li>
-			</ul>
-		</div>
+		<?php get_template_part( 'template-parts/content' ); ?>
 	
 			<?php endwhile; ?>
 
