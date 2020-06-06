@@ -95,3 +95,16 @@ function microformatsorg_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'microformatsorg_scripts' );
 
+function microformatsorg_footer() {
+	if( defined( 'MICROFORMATS_GOOGLE_ANALYTICS' ) ) {
+	?>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript" />
+	<script type="text/javascript"> 
+		_uacct = "<?php echo MICROFORMATS_GOOGLE_ANALYTICS;?>";
+		urchinTracker();
+	</script>
+	<?php
+	}
+}
+
+add_action( 'wp_footer', 'microformatsorg_footer' );
