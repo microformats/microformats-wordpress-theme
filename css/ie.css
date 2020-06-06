@@ -1,0 +1,10 @@
+/*
+Title:	Microformats fixes for Internet Explorer 6
+Author: 	dan@simplebits.com/ben@ben-ward.co.uk
+Updated:	26 May 2008
+*/
+
+/* fixes IE double-margin bug */
+#content, #sidebar {
+	display: inline;
+}

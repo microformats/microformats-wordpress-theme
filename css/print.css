@@ -1,0 +1,25 @@
+/*
+Title:      microformats styles for print media
+Author:     dan@simplebits.com
+Updated:    11 May 2005
+*/
+
+body {
+	margin: .6in;
+	font-family: Verdana, sans-serif;
+	font-size: 12pt;
+	}
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	}
+#nav, hr {
+	display: none;
+	}
+a:link, a:visited {
+	color: gray;
+	}	
+
+/* print URLs after link text */
+#content .entry p a:link:after, #content .entry p a:visited:after {
+	content: " (" attr(href) ") ";
+	}

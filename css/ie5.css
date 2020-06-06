@@ -1,0 +1,11 @@
+/*
+Title:	Microformats fixes for Internet Explorer 5 (Windows)
+Author: 	dan@simplebits.com/ben@ben-ward.co.uk
+Updated:	26 May 2008
+*/
+body {
+	font-size: x-small;
+}
+#wrap {
+	width: 758px;
+}
