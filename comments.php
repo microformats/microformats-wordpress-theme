@@ -29,7 +29,7 @@ if ( ! empty( $post->post_password ) ) { // if there's a password
 
 		<li class="hentry <?php echo $oddcomment; ?>" id="comment-<?php comment_ID(); ?>">
 			<cite class="entry-title author">
-				<?php echo get_avatar( $comment_author_email, 50 ); ?>
+				<?php echo get_avatar( $comment, 50 ); ?>
 				<?php comment_author_link(); ?>
 			</cite>:
 			
@@ -93,7 +93,7 @@ if ( ! empty( $post->post_password ) ) { // if there's a password
 
 		<?php if ( $user_ID ) : ?>
 
-<p>Logged in as <?php echo get_avatar( $comment_author_email, 16 ); ?> <a href="<?php echo get_option( 'siteurl' ); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option( 'siteurl' ); ?>/wp-login.php?action=logout" title="<?php _e( 'Log out of this account' ); ?>">Logout &raquo;</a></p>
+<p>Logged in as <?php echo get_avatar( $comment, 16 ); ?> <a href="<?php echo get_option( 'siteurl' ); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option( 'siteurl' ); ?>/wp-login.php?action=logout" title="<?php _e( 'Log out of this account' ); ?>">Logout &raquo;</a></p>
 
 	<?php elseif ( $hascommented && ! isset( $_GET['changeDetails'] ) ) : ?>
 	<input type="hidden" name="author" id="author" value="<?php echo $comment_author; ?>">
