@@ -10,7 +10,7 @@ Template Name: Archives
 
 <h2>Blog Archive by Month:</h2>
   <ul>
-    <?php wp_get_archives('type=monthly'); ?>
+	<?php wp_get_archives( 'type=monthly' ); ?>
   </ul>
 
 </div>	
