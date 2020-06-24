@@ -42,4 +42,4 @@
 			?>
 		</li>
 	</ul>
-</div>
+</article>
