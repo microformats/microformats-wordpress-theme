@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-	<div id="content">
+	<div id="content" class="hfeed h-feed">
 		<?php
 		if ( have_posts() ) {
-			the_archive_title( '<h2 class="pagetitle">', '</h2>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			the_archive_title( '<h2 class="pagetitle p-name">', '</h2>' );
+			the_archive_description( '<div class="taxonomy-description p-summary">', '</div>' );
 			the_posts_pagination(
 				array(
 					'prev_text'          => __( 'Previous Entries', 'microformats' ),

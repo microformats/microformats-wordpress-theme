@@ -1,6 +1,6 @@
-<div class="<?php post_class( 'post' ); ?>">
-	<h2 id="post-<?php the_ID(); ?>"><?php the_title(); ?></h2>
-	<div class="entrytext">
+<div <?php post_class( array( 'post', 'h-entry' ) ); ?>>
+	<h2 id="post-<?php the_ID(); ?>" class="entry-title p-name"><?php the_title(); ?></h2>
+	<div class="entrytext entry-content e-content">
 		<?php the_content( '<p class="serif">Read the rest of this page &raquo;</p>' ); ?>
 		<?php
 			wp_link_pages(

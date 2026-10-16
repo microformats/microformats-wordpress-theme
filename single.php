@@ -8,7 +8,6 @@
 			the_post();
 
 			get_template_part( 'template-parts/content', 'single' );
-			comments_template();
 		endwhile; else :
 			?>
 		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

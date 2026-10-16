@@ -108,3 +108,8 @@ function microformatsorg_footer() {
 }
 
 add_action( 'wp_footer', 'microformatsorg_footer' );
+
+/**
+ * Adds microformats2 semantics.
+ */
+require get_template_directory() . '/inc/semantics.php';

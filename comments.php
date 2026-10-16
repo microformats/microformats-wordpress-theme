@@ -23,31 +23,30 @@ if ( ! empty( $post->post_password ) ) { // if there's a password
 <?php if ( $comments ) : ?>
 	<h3 id="comments"><?php comments_number( 'No Responses', 'One Response', '% Responses' ); ?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
 
-	<ol class="com-list hfeed" id="comment-feed">
+	<ol class="com-list" id="comment-feed">
 
 	<?php foreach ( $comments as $comment ) : ?>
 
-		<li class="hentry <?php echo $oddcomment; ?>" id="comment-<?php comment_ID(); ?>">
-			<cite class="entry-title author">
-				<?php echo get_avatar( $comment, 50 ); ?>
-				<?php comment_author_link(); ?>
+		<li class="hentry h-cite p-comment <?php echo $oddcomment; ?>" id="comment-<?php comment_ID(); ?>">
+			<cite class="entry-title author vcard p-author h-card">
+				<?php echo get_avatar( $comment, 50, '', '', array( 'class' => 'u-photo' ) ); ?>
+				<span class="fn p-name"><?php comment_author_link(); ?></span>
 			</cite>:
-			
+
 			<?php if ( $comment->comment_approved == '0' ) : ?>
 			<em>Your comment is awaiting moderation.</em>
 			<?php endif; ?>
-						
-			<div class="entry-content">
+
+			<div class="entry-content e-content p-name">
 				<?php comment_text(); ?>
 				<?php edit_comment_link( '<p>Edit Comment</p>', '', '' ); ?>
 			 </div>
-			
+
 			<p class="com-meta">
-				<a class="entry-title" rel="bookmark" href="#comment-<?php comment_ID(); ?>">
-					<span class="updated">
-						<span class="value-title" title="<?php comment_date( 'Y-m-d\TH:i:s' ); ?>"> </span>
+				<a class="entry-title u-url" rel="bookmark" href="#comment-<?php comment_ID(); ?>">
+					<time class="updated published dt-published" datetime="<?php comment_date( 'c' ); ?>">
 						<?php comment_date( 'F jS, Y' ); ?> at <?php comment_time(); ?>
-					</span>
+					</time>
 				</a>
 			</p>
 

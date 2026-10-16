@@ -12,12 +12,12 @@
 
 <div id="wrap">
 	<div id="header">
-		<h1>
+		<h1 class="h-card">
 		<?php if ( is_home() ) { ?>
-			<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo.gif" width="144" height="36" alt="microformats" />
+			<img class="u-logo p-name" src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo.gif" width="144" height="36" alt="microformats" />
 		<?php } else { ?>
-			<a href="/">
-				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo.gif" width="144" height="36" alt="microformats" />
+			<a class="u-url" href="/" rel="home">
+				<img class="u-logo p-name" src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/logo.gif" width="144" height="36" alt="microformats" />
 			</a>
 		<?php } ?></h1>
 
